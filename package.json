@@ -6,6 +6,7 @@
     "dev": "npx tailwindcss -i ./input.css -o ./output.css --watch",
     "watch:dev": "nodemon -x npm run dev",
     "watch": "run-p watch:dev sync",
+    "build": "npx tailwindcss -i ./input.css -o ./output.css --minify",
     "quave-eslint": "eslint . --fix",
     "quave-prettier": "prettier --write \"**/*.js\"",
     "quave-check": "npm run quave-eslint && npm run quave-prettier"
