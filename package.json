@@ -1,5 +1,5 @@
 {
-  "name": "doisamigoseumariqueza",
+  "name": "sneakpeek-landingpage",
   "version": "1.0.0",
   "scripts": {
     "sync": "browser-sync start --server --files \"**/*\"",

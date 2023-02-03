@@ -27,5 +27,5 @@ jobs:
       - name: Install and Build
         run: npm install && npm run build
 
-      - name: Deploy to doisamigoseumariqueza.com
-        run: aws s3 sync ./ s3://doisamigoseumariqueza.com --delete --exclude "*" --include "*.html" --include "*.png" --include "*.ico" --include "output.css" --exclude "node_modules/*"
+      - name: Deploy to sneakpeek.ai
+        run: aws s3 sync ./ s3://www.sneakpeek.ai --delete --exclude "*" --include "*.html" --include "*.png" --include "*.ico" --include "output.css" --exclude "node_modules/*"
