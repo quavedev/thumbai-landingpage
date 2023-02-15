@@ -29,3 +29,6 @@ jobs:
 
       - name: Deploy to thumbai.io
         run: aws s3 sync ./ s3://www.thumbai.io --delete --exclude "*" --include "*.html" --include "*.png" --include "*.ico" --include "output.css" --exclude "node_modules/*"
+
+      - name: Clear cache
+        run: aws cloudfront create-invalidation --distribution-id "EAAHR6FATE69H" --paths "/*"
