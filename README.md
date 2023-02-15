@@ -1,1 +1,1 @@
-# sneakpeek landing page
+# thumbai.io landing page
